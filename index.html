@@ -18,151 +18,119 @@
             align-items: center;
             justify-content: center;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: #000;
             color: #fff;
             padding: 20px;
         }
 
         .container {
-            max-width: 420px;
+            max-width: 400px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 40px 32px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             text-align: center;
         }
 
-        .logo {
+        .icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            margin: 0 auto 24px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin: 0 auto 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            font-size: 36px;
         }
 
         h1 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #fff 0%, #a8b4ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
         .subtitle {
             color: rgba(255, 255, 255, 0.6);
             font-size: 15px;
-            margin-bottom: 32px;
-            line-height: 1.5;
+            margin-bottom: 40px;
+            line-height: 1.6;
         }
 
         .key-display {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
             padding: 16px;
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             font-family: 'SF Mono', Monaco, 'Courier New', monospace;
-            font-size: 13px;
-            color: #a8b4ff;
-            word-break: break-all;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .key-label {
-            font-size: 12px;
+            font-size: 11px;
             color: rgba(255, 255, 255, 0.4);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin-bottom: 8px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            display: block;
             width: 100%;
             padding: 16px 24px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 500;
             border: none;
-            border-radius: 14px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             text-decoration: none;
+            text-align: center;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #0088cc 0%, #0066aa 100%);
-            color: #fff;
-            box-shadow: 0 10px 30px rgba(0, 136, 204, 0.4);
+            background: #fff;
+            color: #000;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(0, 136, 204, 0.5);
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-1px);
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
+            background: transparent;
             color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
             margin-top: 12px;
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.5);
         }
 
-        .success-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
         }
 
-        .error-state {
-            color: #f87171;
+        .footer a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
         }
 
-        .error-state .logo {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);
+        .footer a:hover {
+            color: #fff;
         }
 
         .hidden {
             display: none;
         }
 
-        .telegram-icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        .footer {
-            margin-top: 24px;
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .footer a {
-            color: #a8b4ff;
-            text-decoration: none;
+        .error .icon {
+            border-color: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
@@ -170,25 +138,21 @@
 <body>
     <!-- Success State -->
     <div class="container" id="success-state">
-        <div class="success-icon">✓</div>
-        <h1>Авторизация успешна!</h1>
-        <p class="subtitle">Ваш API ключ готов к использованию. Нажмите кнопку ниже, чтобы подключить его к боту.</p>
+        <div class="icon">✓</div>
+        <h1>Готово</h1>
+        <p class="subtitle">Ваш API ключ получен. Нажмите кнопку ниже, чтобы подключить его к боту.</p>
 
         <div class="key-display">
-            <div class="key-label">Ваш API ключ</div>
+            <div class="key-label">Ваш ключ</div>
             <div id="api-key-text">sk_...</div>
         </div>
 
         <a href="#" id="telegram-link" class="btn btn-primary">
-            <svg class="telegram-icon" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z" />
-            </svg>
             Открыть в Telegram
         </a>
 
         <button class="btn btn-secondary" onclick="copyKey()">
-            📋 Скопировать ключ
+            Скопировать ключ
         </button>
 
         <p class="footer">
@@ -197,10 +161,10 @@
     </div>
 
     <!-- Error State -->
-    <div class="container error-state hidden" id="error-state">
-        <div class="logo">✕</div>
-        <h1>Ключ не найден</h1>
-        <p class="subtitle">Не удалось получить API ключ. Попробуйте авторизоваться снова через бота.</p>
+    <div class="container error hidden" id="error-state">
+        <div class="icon">✕</div>
+        <h1>Ошибка</h1>
+        <p class="subtitle">Не удалось получить API ключ. Попробуйте авторизоваться снова.</p>
 
         <a href="https://t.me/testkiberpup12bot" class="btn btn-primary">
             Вернуться в бота
@@ -208,10 +172,8 @@
     </div>
 
     <script>
-        // === НАСТРОЙКИ ===
-        const BOT_USERNAME = 'testkiberpup12bot'; // Замените на username вашего бота
+        const BOT_USERNAME = 'testkiberpup12bot';
 
-        // Извлекаем API ключ из URL фрагмента
         const params = new URLSearchParams(window.location.hash.slice(1));
         const apiKey = params.get('api_key');
 
@@ -221,21 +183,16 @@
         const telegramLink = document.getElementById('telegram-link');
 
         if (apiKey) {
-            // Показываем успешное состояние
             successState.classList.remove('hidden');
             errorState.classList.add('hidden');
 
-            // Показываем ключ (скрываем середину)
-            const maskedKey = apiKey.slice(0, 8) + '...' + apiKey.slice(-6);
+            const maskedKey = apiKey.slice(0, 8) + '...' + apiKey.slice(-4);
             apiKeyText.textContent = maskedKey;
             apiKeyText.dataset.fullKey = apiKey;
 
-            // Формируем deeplink для Telegram
-            // Ключ кодируется в base64 для безопасной передачи
             const encodedKey = btoa(apiKey);
             telegramLink.href = `https://t.me/${BOT_USERNAME}?start=pollen_${encodedKey}`;
         } else {
-            // Показываем ошибку
             successState.classList.add('hidden');
             errorState.classList.remove('hidden');
         }
@@ -244,9 +201,8 @@
             const key = apiKeyText.dataset.fullKey;
             navigator.clipboard.writeText(key).then(() => {
                 const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = '✓ Скопировано!';
-                setTimeout(() => btn.textContent = originalText, 2000);
+                btn.textContent = '✓ Скопировано';
+                setTimeout(() => btn.textContent = 'Скопировать ключ', 2000);
             });
         }
     </script>
